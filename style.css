@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.btn {
+	background-color: #A59678;
+	padding: .3em 1.5em;
+	font-family: 'Oswald', sans-serif;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-radius: 40px;
+	color: white;
+}
+
+.btn:hover,
+.btn:focus {
+	opacity: .8;
+}
+
+.header {
+	background-color: #2E323F;
+}
+
+.container {
+	padding: 0 2em;
+	margin: 0 auto;
+	max-width: 1200px;
+}
+
+.container--header {
+	height: 4rem;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav {
+	position: absolute;
+	left: 0;
+	top: 4rem;
+	background-color: #2E323F;
+	width: 100%;
+	visibility: hidden;
+	height: 0;
+}
+
+.nav--visible {
+	visibility: visible;
+	height: auto;
+}
+
+.nav-toggle {
+	cursor: pointer;
+	border: 0;
+	width: 3em;
+	height: 3em;
+	border-radius: 5px;
+	background: none;
+	transition: opacity 250ms ease;
+}
+
+.nav-toggle:focus,
+.nav-toggle:hover {
+	opacity: .75;
+}
+
+.burger {
+	width: 70%;
+	position: relative;
+}
+
+.burger,
+.burger::before,
+.burger::after {
+	display: block;
+	margin: 0 auto;
+	height: 3px;
+	background: white;
+}
+
+.burger::before,
+.burger::after {
+	content: '';
+	width: 100%;
+}
+
+.burger::before {
+	transform: translateY(-8px);
+}
+
+.burger::after {
+	transform: translateY(5px);
+}
+
+.nav__items {
+	text-align: center;
+	list-style: none;
+}
+
+.nav__item {
+	margin: 1.2em 0;
+}
+
+.nav__link {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+	color: #ffffff;
+}
+
+.hero {
+	background-color: #3B4050;
+	color: #ffffff;
+}
+
+.hero__title {
+	font-family: 'Oswald', sans-serif;
+	font-size: 4rem; /* 5.625 */
+	line-height: 1.3em;
+	padding: .5em 0;
+}
+
+.hero__title .hl-text {
+	color: #A59678;	
+}
+
+.hero__text {
+	font-size: 1.5rem;
+	padding: .5em 0;
+}
+
+.hero__text p {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.hero__text .btn {
+	display: inline-block;
+	letter-spacing: 1px;
+	margin: 1em 0;
+}
